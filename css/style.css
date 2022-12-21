@@ -1,0 +1,75 @@
+/* 
+main color #087f5b
+grey color #343a40
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #087f5b20;
+}
+.accordion {
+  width: 700px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.item {
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  border-top: 4px solid #087f5b;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 20px;
+  row-gap: 30px;
+  align-items: center;
+}
+.item svg {
+  width: 24px;
+  height: 24px;
+}
+.number {
+  color: #6e6f70;
+}
+.number,
+.text,
+.item svg {
+  font-size: 24px;
+  font-weight: 500;
+}
+.text {
+}
+.hidden {
+  grid-column: 2;
+  display: none;
+}
+.hidden ul {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #6e6f70;
+}
+.open .hidden {
+  display: block;
+}
+.open .number,
+.open .text,
+.open svg {
+  color: #087f5b;
+}
+.show-acc {
+}
+.hide-acc0,
+.hide-acc1,
+.hide-acc2 {
+  display: none;
+}
